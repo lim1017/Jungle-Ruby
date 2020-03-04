@@ -11,7 +11,7 @@
       <tbody>
         <%  @order.line_items.each do |item| %> 
 
-        <%= render 'item', product:
+        <%= render 'itemz', product:
         item.product, quantity: item.quantity %> 
         
 
@@ -23,7 +23,7 @@
             TOTAL:
           </th>
           <th>
-            <%= number_to_currency(cart_subtotal_cents / 100.0) %>
+            <%= number_to_currency(@order.total_cents / 100.0) %>
           </th>
         </tr>
       </tfoot>

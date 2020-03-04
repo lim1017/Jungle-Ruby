@@ -4,5 +4,12 @@ class Admin::DashboardController < ApplicationController
 
 
   def show
+
+
+    @count = Product.all.count()
+    @countCategories=Category.all.count()
+
+
+
   end
 end
