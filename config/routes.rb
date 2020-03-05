@@ -13,6 +13,19 @@ Rails.application.routes.draw do
   end
 
   resources :orders, only: [:create, :show]
+  
+
+  # these routes are for showing users a loginform, logging them in, and logging them out.
+  get '/login' => 'sessions#new'
+  post '/login' => 'sessions#create'
+  get '/logout' => 'sessions#destroy'
+
+  get '/signup' => 'user#new'
+  post '/users' => 'user#create'
+  
+
+
+
 
   namespace :admin do
     root to: 'dashboard#show'
