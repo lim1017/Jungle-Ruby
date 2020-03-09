@@ -46,6 +46,7 @@ group :development, :test do
   gem 'dotenv-rails'
   gem 'rspec-rails', '~> 3.5'
   gem 'capybara'
+  gem 'selenium-webdriver'
   gem 'poltergeist'
   gem 'database_cleaner'
 end
