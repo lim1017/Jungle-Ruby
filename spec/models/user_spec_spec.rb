@@ -4,8 +4,6 @@ RSpec.describe User, type: :model do
 
   describe 'Validations' do
 
-
-
     it 'expects all fields to exist' do
       user=User.new(fname:"tom", lname:"lim", email:"lim@hotmail.com", password:"abc", password_confirmation:"abc")
       expect(user).to be_valid
