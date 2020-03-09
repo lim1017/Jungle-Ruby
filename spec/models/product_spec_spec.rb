@@ -1,6 +1,4 @@
 require 'rails_helper'
-require 'spec_helper'
-require 'product'
 
 
 
@@ -16,8 +14,6 @@ require 'product'
 
       it 'should have a name/price/quantity/category' do
         @product = product1
-    
-        puts @product
         expect(@product).to be_valid
 
       end
